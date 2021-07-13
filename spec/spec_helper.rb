@@ -4,14 +4,14 @@ require 'pry'
 require 'simplecov'
 
 SimpleCov.start do
-  enable_coverage :branch
+  # enable_coverage :branch
 
   add_filter [
     %r{^/spec}
   ]
 end
 
-SimpleCov.minimum_coverage line: 100, branch: 94
+# SimpleCov.minimum_coverage line: 100, branch: 94
 SimpleCov.refuse_coverage_drop
 
 require 'rspec/snapshot'

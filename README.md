@@ -2,6 +2,13 @@
 
 Adds snapshot testing to RSpec, inspired by [Jest](https://jestjs.io/).
 
+# Temporary Gem Fork
+Note from Cesar Palafox - cpalafox@mavenlink.com
+
+To allow more robust testing on subscribed events, we wanted to use [rspec-snapshot](https://github.com/levinmr/rspec-snapshot) but the full behavior was only available in the recent v2.
+
+The Gem's V2 is tied to ruby 2.5, and given bigmaven is stuck on 2.3, the decision was made to make this fork and downgrade the dependencies so that it can be attached to our own project. Whenever we get to ruby 2.5 on bigmaven, we can point directly to the Gem's master and delete this fork
+
 ## Installation
 
 Add this line to your application's Gemfile:
